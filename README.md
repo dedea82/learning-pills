@@ -5,10 +5,13 @@ This repository contains only terminal pills and snippets helped me or frequentl
     // discover new releases of the packages
     npm outdated
     
+    // auditing vulnerability
+    npm audit --production
+    
     // upgrading npm dependencies
     npm install -g npm-check-updates
     ncu  // list new major version
-    ncu -u  // upgrade package.json (then run npm update or install)
+    ncu -u --target minor  // upgrade package.json (then run npm update or install)
     
     // list of globally installed packages
     npm list -g --depth 0
